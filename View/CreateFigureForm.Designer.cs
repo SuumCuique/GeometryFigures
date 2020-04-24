@@ -35,9 +35,12 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.Ok = new System.Windows.Forms.Button();
 			this.Cancel = new System.Windows.Forms.Button();
-			this.SideA = new System.Windows.Forms.TextBox();
-			this.SideB = new System.Windows.Forms.TextBox();
-			this.SideC = new System.Windows.Forms.TextBox();
+			this.SideA = new System.Windows.Forms.NumericUpDown();
+			this.SideB = new System.Windows.Forms.NumericUpDown();
+			this.SideC = new System.Windows.Forms.NumericUpDown();
+			((System.ComponentModel.ISupportInitialize)(this.SideA)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.SideB)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.SideC)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// TypeFigure
@@ -114,24 +117,29 @@
 			// 
 			// SideA
 			// 
-			this.SideA.Location = new System.Drawing.Point(123, 49);
+			this.SideA.DecimalPlaces = 2;
+			this.SideA.Location = new System.Drawing.Point(124, 50);
 			this.SideA.Name = "SideA";
-			this.SideA.Size = new System.Drawing.Size(121, 20);
-			this.SideA.TabIndex = 13;
+			this.SideA.Size = new System.Drawing.Size(120, 20);
+			this.SideA.TabIndex = 16;
+			this.SideA.ThousandsSeparator = true;
 			// 
 			// SideB
 			// 
-			this.SideB.Location = new System.Drawing.Point(123, 84);
+			this.SideB.DecimalPlaces = 2;
+			this.SideB.Location = new System.Drawing.Point(124, 87);
 			this.SideB.Name = "SideB";
-			this.SideB.Size = new System.Drawing.Size(121, 20);
-			this.SideB.TabIndex = 14;
+			this.SideB.Size = new System.Drawing.Size(120, 20);
+			this.SideB.TabIndex = 17;
 			// 
 			// SideC
 			// 
-			this.SideC.Location = new System.Drawing.Point(123, 122);
+			this.SideC.DecimalPlaces = 2;
+			this.SideC.Location = new System.Drawing.Point(124, 123);
 			this.SideC.Name = "SideC";
-			this.SideC.Size = new System.Drawing.Size(121, 20);
-			this.SideC.TabIndex = 15;
+			this.SideC.Size = new System.Drawing.Size(120, 20);
+			this.SideC.TabIndex = 18;
+			this.SideC.ThousandsSeparator = true;
 			// 
 			// CreateFigureForm
 			// 
@@ -155,6 +163,9 @@
 			this.MinimumSize = new System.Drawing.Size(309, 255);
 			this.Name = "CreateFigureForm";
 			this.Text = "Create Figure";
+			((System.ComponentModel.ISupportInitialize)(this.SideA)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.SideB)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.SideC)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -169,8 +180,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Ok;
         private System.Windows.Forms.Button Cancel;
-		private System.Windows.Forms.TextBox SideA;
-		private System.Windows.Forms.TextBox SideB;
-		private System.Windows.Forms.TextBox SideC;
+		private System.Windows.Forms.NumericUpDown SideA;
+		private System.Windows.Forms.NumericUpDown SideB;
+		private System.Windows.Forms.NumericUpDown SideC;
 	}
 }
